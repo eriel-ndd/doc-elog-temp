@@ -1,0 +1,307 @@
+---
+id: remocao-de-um-prestador-de-servico
+title: "Remoção de um prestador de serviço"
+description: "Remoção de um prestador de serviço"
+sidebar_label: "Remoção de um prestador de serviço"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VcFq20AQ/ZVlTi0sthtaKLoVYnopIYT2ZEzYaMf2ptLOZnZk4gp9QD+j9JAP8Y+VkRw3jtPQQslJ0s7M2zdvdp9aELfMUMzgIzLGMrgao5DxaBJjFueJMetnRl6H7R3B3EJy7GoUZK1sIboaoYDgMUpYhFKLwEKIUEBysgILjDdNYPRQCDdoIcum0poc6lQhWMDbVJFHKBauyppQrrB2ULQgm9RnCoe4hK6bK1pOFDNmjZ9MJvrwmEsOSQLptuf35B9SN4w1rYMnU1JtclNizgQWSoqCURTFpVSF0inK+DorVHtMha6usRSwkJgSsoSBSI05uyUec9buXN/nPxHrOgsSpC8LsQoRL+8bvzyZTC7fQ9dpztvJm2MBzrY/ybhGiMM352lktt9NRAXe/uDQh3RapWOj0zROQ44NZkHDWDacafTC2vwfzs/JplINor176tRMmcmEKMiRTKRhPp54ZM6JzcKtia1RDmgirfurgqZ2IRtx7NGajIYMKkpCziFLYGtUQicayU0iFnxpXV+sreekV8G7QftD0S+wpu2djt6jaerfvnPgOhZqlBV5KMBjhaKe0XtLAeN9xbg98KAOLCjAvU81XEEBK5FUjMdXFS1HrqxxVFIN6iohLqgXctfBOdM1Dl6o4i3ZDTTPTk/hcRN/yAULuvuQ82Y0gc5Coiy166e8M86/VeBgy/3ABW9lnCoXoqL3PbY7aWawhwILxaFBzy2sKItmte2Vy/iFq67T5ZsGeQPFbG5h7Ti4K5Vj1oIPWd/93qQfEdqfaXh1sfP71wbs00R3iy5uVCRXNfoFFr7i5uhf0s07Cyt0HrknMuR8KEtM8qD66CLpVPfH5nT6afp5Cl33C0g3fLM=
+sidebar_class_name: "delete api-method"
+info_path: docs/ndd-elog-api-docs/projeto-de-integracao-ndd
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Remoção de um prestador de serviço"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/prestador/{identificador}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Remoção de um prestador de serviço
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"identificador","in":"path","required":true,"style":"simple","explode":false,"schema":{"type":"string"},"enumDescriptions":[]}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Prestador de serviço removido com sucesso
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Prestador de serviço removido com sucesso"}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"Prestador de serviço removido com sucesso\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"401"}
+        value={"401"}
+      >
+        <div>
+          
+          
+          Não autorizado. É necessário autenticar para acessar este recurso.
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Não autorizado. É necessário autenticar para acessar este recurso."}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"Não autorizado. É necessário autenticar para acessar este recurso.\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"500"}
+        value={"500"}
+      >
+        <div>
+          
+          
+          Erro interno no servidor. Por favor, tente novamente mais tarde, se o erro persistir, contate o suporte.
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Erro interno no servidor. Por favor, tente novamente mais tarde, se o erro persistir, contate o suporte."}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"Erro interno no servidor. Por favor, tente novamente mais tarde, se o erro persistir, contate o suporte.\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

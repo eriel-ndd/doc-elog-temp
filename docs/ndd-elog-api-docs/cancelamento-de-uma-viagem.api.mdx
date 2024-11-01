@@ -1,0 +1,140 @@
+---
+id: cancelamento-de-uma-viagem
+title: "Cancelamento de uma viagem"
+description: "Cancelamento de uma viagem"
+sidebar_label: "Cancelamento de uma viagem"
+hide_title: true
+hide_table_of_contents: true
+api: eJx9U0tu20AMvQrBVQsIclK0G20boyhQBEHRZmNkwWhom600VDgjI66gA/QYRRY9iC9WUHaMfLvSiOS8x+F7HDDTKmG1wE9sHGuhlmNWCAwboRW3eFVgR0YtZzYvHDBSy1ihBCxQIlbYUV5jgYFTbdJlUQ9+DhyzLKWmoAaB7vEKNL7pxThgla3nAlPeNg6YpO0axgL5tms0MFZLapIX1GtuCasB87abKrNJXOE4Xjla6jQmTp5/d3Lin8edXE7EUFOsuaFAUGsLqa85JcWxwPcvXZqbKUSCqdkku7+7Oy3hkk2WctMzaIJAQRNw3Igfyj3U6XOo892dAvVZTX5R0BJ2vyGy0+/+mEwpH1VNBj5pIE+RAafMYFz3lnRC//BqoxIzW1SIColtI0GthAs1WNJGrQAnYIi6meRlaEkSZLLABSQGBXaUji1JymIF1BozZc+kvlPLXOI4PpX4436iR8f07QOVW85rDVhh4IazyzrZpMLZvmQ2SBixQO/33lm9NVjhOueums2uG12VVLdc1tqiSy1xqZMLJE+GuTD9wXtqH8DKaJIJzs/OntnxlVos0Nn3NafliY+505Rbis50sPp/H/qI52jRzLd51jUk0SGnhw2HCSzweLeS4Au21pQ9PgzXlPi7NePo4ZuebYvV4qrADZnQtb96MWCQ5OdwXJAnLbh4HDNW+ObrYdfewuv7+GLHhyDFrY+Imt7/sMCfvN3v/ng1PhD5bP5l/m2O4/gPILaBzA==
+sidebar_class_name: "delete api-method"
+info_path: docs/ndd-elog-api-docs/projeto-de-integracao-ndd
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Cancelamento de uma viagem"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/viagem/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Cancelamento de uma viagem
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"id","in":"path","description":"Identificador da viagem","required":true,"style":"simple","explode":false,"schema":{"type":"string"},"enumDescriptions":[]}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Viagem cancelada com sucesso
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"400"}
+        value={"400"}
+      >
+        <div>
+          
+          
+          Erro na requisição. Verifique os dados enviados.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"401"}
+        value={"401"}
+      >
+        <div>
+          
+          
+          Não autorizado. É necessário autenticar para acessar este recurso.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"500"}
+        value={"500"}
+      >
+        <div>
+          
+          
+          Erro interno no servidor. Por favor, tente novamente mais tarde, se o erro persistir, contate o suporte.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

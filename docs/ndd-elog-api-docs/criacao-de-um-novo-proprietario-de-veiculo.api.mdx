@@ -1,0 +1,483 @@
+---
+id: criacao-de-um-novo-proprietario-de-veiculo
+title: "Criação de um novo proprietário de veículo"
+description: "Criação de um novo proprietário de veículo"
+sidebar_label: "Criação de um novo proprietário de veículo"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFV81u40YMfpUBT11g6vyge9Gt6zhBiiI1svFeAiOgJcaeVJpROCM3WUMPsI9R7GFPPe1tr3qxliM7tmHHzhZF6oOkoaiP5Dckh55BwLGH5BrOiMmmBguywamMVMmuZEOh+ZON8yL5QM1faZU7D0MNTPcV+fDOZY+QzCB1NpAN8ohlmZsUg3H24M47KzKfTqhAeZLvDFMmNru9PmjoXvR/6fZPQcP5u7Oe3OIlIxvMrUkxcwwafnVjxsxV7EDDhStIblVBcX15cXXZBQ1XppTl4FQ8DI8lQQJudEdpAA0SEHEw5MWPdfxktlD3gY0dg4aMfMqmlDAgWVdXmVunRwTTOTsd1UUvDJoHUlSoEaNNnRoTI1PhvKoKdTY4P1HNN2tSB/WSgb1eiKJyler2Tzd80MpToUpnQ4XNl+ZzRI5E7YUVLYG9xI/NZ6feu9RgvmFA8Fqi9wJGta0A570XcG1lFWNQPR8wq7Z4o35wIzZjDM1XWXlSdxWbzKT4RuyspMtee0tdsUI2I6bmi9vq/zzl9lPafBPF/YCDF2z7IO42CRXbQaSQ9idPr7/bna0ZFGtyP3bzNTNjp0RbZahSk2FGYqG/7mutIZiQC9TiDbYvar3SGwJXFAW+dNa3FXt8eCS3dcNr8CplIxSlrlC+Ssl76QYvbk27G0ZB3uN4azXRAxblWkzPurNKgLG5sXSzCPLm+PDo5liYqDX8dHi4GWyP2SmLKvLk2wrpqA/E5tbcV6SkTWPmvCI7Fcu+88rh/wsHdxEiJCzo2LL3F9IgsAqOzUfM/mm8zSdlSXhu6cdKAjcpsiqRUaG8QpZCIsWUVuzdazP03/i8m7SjOWlvn80hYwOxdcpK4+SpyRx3VN+xusWpY63EB1LWTeM4QKpA41VAzkh6hHKKBKUk9sYHw1oJhRjkja9Kx4H+l8x7jbB2Uf92nq/1Rntk03ZUGaOqQlzYmCDoaYIADQWFicsggdL5yAiGCSRwUK72TA0SJbHMbzOoOIcEJiGUycHBKHfjDqYFdVJXQD3UIKxfLme23oK5jUloye7TWLIUtfPEcj2fB5YCOd+Xq9VTeAVkfoYuJYM1I/E0W4GMJ9BiXWsw9rY9gZcHyR21Q6tkwJjnXF+cnGwcVM/oggYhstU56hyKGaG+wJiqFmPY372Na7af0jfQQzgoczRWzMR9m813+BrWdnioYSIJkFzDbDZCTwPO61rE9xXxIyTXQw1TZIMjYeJ6WGuYEGbEMSV+p0fxui3DH6/EuqjnlXixUZK1Xnzxc5pSGXbqDldytP/b+yvQMJr/FShcJt8w/gE6XhMADS6yEAs6ymaQox1XsbChxZTf38dQfys=
+sidebar_class_name: "post api-method"
+info_path: docs/ndd-elog-api-docs/projeto-de-integracao-ndd
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Criação de um novo proprietário de veículo"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/proprietario"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Criação de um novo proprietário de veículo
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"Identificador"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"Identificador do proprietário do veículo. Caso deixe em branco geraremos um GUID único"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"CNPJCPF"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"CNPJ ou CPF do proprietário, sem pontuação"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"Nome"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"Nome ou Razão Social do proprietário"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"RNTRC"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"RNTRC do proprietário"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"IE"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"Inscrição Estadual do proprietário (obrigatório se juridica)"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"Logradouro"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"Logradouro do endereço do proprietário"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"Numero"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"Número do endereço do proprietário"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"UF"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"UF do estado do proprietário"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"CEP"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"CEP do endereço do proprietário, sem pontuação"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"IBGE"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"Código IBGE da cidade do Proprietário"}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Proprietário criado com sucesso
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Proprietário criado com sucesso"}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"Proprietário criado com sucesso\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"400"}
+        value={"400"}
+      >
+        <div>
+          
+          
+          Erro na requisição. Verifique os dados enviados.
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Erro na requisição. Verifique os dados enviados."}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"Erro na requisição. Verifique os dados enviados.\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"401"}
+        value={"401"}
+      >
+        <div>
+          
+          
+          Não autorizado. É necessário autenticar para acessar este recurso.
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Não autorizado. É necessário autenticar para acessar este recurso."}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"Não autorizado. É necessário autenticar para acessar este recurso.\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"500"}
+        value={"500"}
+      >
+        <div>
+          
+          
+          Erro interno no servidor. Por favor, tente novamente mais tarde, se o erro persistir, contate o suporte.
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Erro interno no servidor. Por favor, tente novamente mais tarde, se o erro persistir, contate o suporte."}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"Erro interno no servidor. Por favor, tente novamente mais tarde, se o erro persistir, contate o suporte.\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

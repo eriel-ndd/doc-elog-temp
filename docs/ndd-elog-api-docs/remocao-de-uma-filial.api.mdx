@@ -1,0 +1,307 @@
+---
+id: remocao-de-uma-filial
+title: "Remoção de uma filial"
+description: "Remoção de uma filial"
+sidebar_label: "Remoção de uma filial"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VUFu20AM/MqCpxZY2E7RXHQrELeXIgiC9mQYBS3R9qbScsOljLiCHtBnFD30If5YQdkxmjjJqcjJtna4nBnSow4UVxmKGXwioVgGbCgqu4rcMtQBQ4a5h4SCDSmJITuI2BAUECqKGpahxIoFPIQIBSTUNXgQum2DUAWFSksesm5rq8mhSTWBB7pLNVcExRLrbIByTQ1C0YFu04BUCXEFfT+323LimCnb+bvJxD4qyqWEpIGt7UcjWzuhhjehQldy43JbUs4MHkqOSlGtDFOqQ4lWNr7JVtud9ubFDZUKHpJwItGw79xQzriiU5ImBwdhLzPpew8adMCFWIdI3+6lfTNZfW+I95OzU4GXu9/ssFWW8AMrHrndTxfJrt39kjAc2TRKFGfTcmhHKI6ykhMqW8k8emUr/g/nl0wzq/amnT+1FVMRdiEqSWQX2WWSTahYRu6KxS1xw+KdcSAXeTOsPrkGQ3aKUpF3mRw7slsSSQ5Zg3hnFqLaSW4Ti9Jr+/pqsl6y/vywr71/ZPo1Nbz7Y6OvyLUN7oOkBg8N6ZorKKCimtRSYEiLAsZ7yLh7ECk9eDBp97HTSg0FrFVTMR4val6NsGxoVHIDFhIhLnnw7UD4SviG9lFmXq0E96wuLy7gMednsODBuu8xZ6MJ9B4SZ21wGOohB58X/KDJcaJKdzpONYZo9w2quoMTMzjWFg/jde5hzVkN0nULzPRV6r63x7ctyRaK2dzDBiXgwtTPOqhCtu/VMWIfsTluLLy5PqT1Wwf+aZaHhxi35gnWrf0CD99pe/Im6Oe9hzVhRTIQ2WM+lCUl/af65G9iQzyuyMX08/TLFPr+L7ZLWW4=
+sidebar_class_name: "delete api-method"
+info_path: docs/ndd-elog-api-docs/projeto-de-integracao-ndd
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Remoção de uma filial"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/filial/{identificador}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Remoção de uma filial
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"identificador","in":"path","required":true,"style":"simple","explode":false,"schema":{"type":"string"},"enumDescriptions":[]}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Filial removida com sucesso
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Filial removida com sucesso"}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"Filial removida com sucesso\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"401"}
+        value={"401"}
+      >
+        <div>
+          
+          
+          Não autorizado. É necessário autenticar para acessar este recurso.
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Não autorizado. É necessário autenticar para acessar este recurso."}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"Não autorizado. É necessário autenticar para acessar este recurso.\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"500"}
+        value={"500"}
+      >
+        <div>
+          
+          
+          Erro interno no servidor. Por favor, tente novamente mais tarde, se o erro persistir, contate o suporte.
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Erro interno no servidor. Por favor, tente novamente mais tarde, se o erro persistir, contate o suporte."}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"Erro interno no servidor. Por favor, tente novamente mais tarde, se o erro persistir, contate o suporte.\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

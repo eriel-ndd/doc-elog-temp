@@ -1,0 +1,682 @@
+---
+id: busca-de-veiculo-por-identificador
+title: "Busca de veículo por identificador"
+description: "Busca de veículo por identificador"
+sidebar_label: "Busca de veículo por identificador"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Wc1y2zgSfhUUTk4V45/Eyezq5sg/5d2No/LYuXhdcQtoy/CQaBoAVXZUeoC9zwt49pCarZpTbrnyxbYaJCXKZixnnMnFJsHG17/obrQmMsDIy96J3EOHVhnI0AYSGsUYyz9UkZKXp4nMwUGGAR3TTqSFDGVPGo02mHOjQJOTiTRW9mQO4UImUqNXzuTBEC/utymFphm6TKTDq8I41LIXXIGJ9OEmZXRvsjxFmUi8zlPSKHvnkHomUBeYgexNZLjJI2Vwxo7kdHrKaD4n69Hz9xfr6/xvUZb3NWuBVpENDjRLwY9oA5NDnqdGAZOvXXreM7nPk4aXqIJMZO4oRxdMxXFB0fsiPtouq6IPnv1grlFgJoYOrCIxQgcOM/KiyMTe8f62KL9Yo0hOEzlIQXVY5S7LSLbggmki35LGlJZvruju7j4yOb1HE1/nEMYGHKG7h7Hjc1RRZ+FRzJFE+TvHXXBQfir/S4IK4XBIVwWuiveQkkMvcvK+/GOMxvfE2caZeC6OGvJEnL3ghcNqTyPXIWl28HKxmFhoEIU1GjSyKOfkyk8QBYkoq2IADhqphGW25e+iCCY1H+P3h+Qs1C+NjEekKBFnL/m5D2NISbxFVf7GrkzE2Savv986SMTZK348ZgahvHWGv77mpXdFcOQbJfvgHCl0Bh6tKM3UoEKo2f6vqLDOPA9YX+CzUd6OMU1qzbaG6AI0qu2iugANa2+g/NKouOfAYooOGt0G5AKIPtkAxqJr9PzZaHSsUx8Cjuhx6sxo21GZzJ0iLAkFaYwwjSJHXd6ODPX+bZ/Xeu37mPNWoj8rUpjRPYt0UdG3FEgZlWIAn4iMAll+FCiGplkXED+4uCsaZKsIlJWfo8EUZMZexG0CxXnhRsxyRZPxAs01eVElPV9xffnQfkWZ8JgZ1/hxJbjyf504m8twZhBXBQRHXRjRQeWv1gwLvyCxLvKUaqLXbaIF4LZs7R0/VUeAxWFTpDjGZGYYFKo6HFlzOL7K+W8LOI2GDBIcBHJdWA9bsI3+90Up25o9CnfBrG3gjfUnIivDZaEDeOOJwB477bzx4sm4AbtwXz4Rl0zotMPmE3EtjTvlffVEXI0fK9ga7/UT8UCZDESsW3PgWB/AtdOoLbJhRxYdoF8o62IMH7na0NCZEYTyszMkPHF3iOKqAKtJXJS3AgRmxnsWWaN4u737HKsEnoOKdXQ56zktNzr/3FsV77qY5q3Su8o8Dg+ODvvLW5ZDHBnPp+8AlCELKQt65MD6nKuQjsXukDSNTaywnr/3wY3ALzRkzPJdjtwuOjiC0QA1jAwt12+XnEWFscFDMYZ0XoQeti9wA1I5NYdR3Zlzk2TOuVkPsUfZEM85EkRGY8MUVTeUiBdcTzGLHYtLxEuOLrIWVejz+yZ3GJhS9NZBkaGjTp2+YtRqB7dLR1t7LAb3wHUjdl9JjWMUHp0wNmqkO1QNMGJ1haUxxG7WUe4MBnCmo7f8i7rvvGYaA6Hyvqm68f1KcrcYjnWT4bgb/9pecVneitzhuLpb8WHW4OO1I8bUNmiKws/vQSeyvzOQiewfDP7RH+zKRO6/2dvhf/HPnVvXv2jEYIXja8wBZXxlqvwjm0NSdYkykce7fJv74Ub803eaxgJLpWBC7mT7g917MiTxgORkQ1GFaIx5NtTyOKcsNsiH8JFD+2dShhPIHQbfko2YrBNgf+cRtrb8Vh2zHR9AFx3SiJXFpILisnBGGwXPmE8rXJbym9MyF7QaHZafqFP+OuSWm7T8UuWOZYDHj3D7cfQ2sim6QfggLQ+encHD4nRGUDyTy7HLz9qMSDA158u60mkSg0VZp4kMJsTJRzv3LXyoE+GHruTIypLVReCC1pILnIMbHs4EzOL69z3tqub5mBTZ0P65lFglwjvJr8531en7y1PbXNlvzmTfkG9ajKJXH5X/qrzX7OsM2G9NUXMhWiHY71ps4rIVgNOO77w4TeTm+sb9qVw1XODN9Sil/I/gtsn7KqlBweM5o8BVcQX8CRyffRQOVeE8rX6/OV7G6KNOj+E1xMHk95K5bShjU2PxQzPE/MCmqoz2qmuUueMcCR6MOBvnHB7d2GiOzwE5cQ5jjoQQjxj3VdVhy8B4EcBpTKoBHDJKjs4bH4xL2O8BAn/xBffI+KPt+sPUesj0bPBpZftFo78pvIL2hFzk5MTdWXiG4YK07MkRRivwVLwn1+qmcG2yQD+ViWQlm/l64VLZkxch5L21tWFKo1VQGa4qyiTPuLmNjhac14tLrKb2cUrWdOIH29v3L3rdtDKRzL2i2Vhd53yRkw8ZRPfWA//Hqb7AcObngNdhLU/BxFtp1HBSm+VE1maRiewtop0m8oJ8YJrJZAgej106nfLyVYHuRvZOThM5BmdgyKY4mUhtPD/r2c8Fd8SZBbJcOazLyzPx0O8TnfI3xdVyaR1DWvCbTOQveHPvh5Hp6TSRFwg83GQJK5otpTAPrd33jhW7ehZGeztHcjr9PztiQjo=
+sidebar_class_name: "get api-method"
+info_path: docs/ndd-elog-api-docs/projeto-de-integracao-ndd
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Busca de veículo por identificador"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/veiculo/{identificador}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Busca de veículo por identificador
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"identificador","in":"path","description":"Identificador do veículo","required":true,"style":"simple","explode":false,"schema":{"type":"string"},"enumDescriptions":[]}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Veículo encontrado
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"Identificador"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"Identificador do veículo. Caso deixe em branco geraremos um GUID único"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"Placa"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"Placa do veículo"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"Modelo"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"Modelo do veículo"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"TipoVeiculo"}
+                        required={false}
+                        schemaName={"integer"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"integer","description":"Especifica se o veículo é de tração ou reboque. Valores possíveis: `1` - Tração , `2` - Reboque"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"TipoRodado"}
+                        required={false}
+                        schemaName={"integer"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"integer","description":"Tipo da unidade de força ou rodado. Para reboque não é utilizado. Valores possíveis: `1` - Truck, `2` - Toco, `3` - Cavalo Mecânico, `4` - VAN, `5` - Utilitário, `6` - Outros"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"TipoCarroceria"}
+                        required={false}
+                        schemaName={"integer"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"integer","description":"Tipo do reboque ou carroceria. Valores possíveis: `0` - Não aplicável, `1` - Aberta, `2` - Fechada/Baú, `3` - Granelera, `4` - Porta Container, `5` - Sider"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"Categoria"}
+                        required={false}
+                        schemaName={"integer"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"integer","description":"Categoria do veículo, utilizado no calculo de pedágio:\n- `0` - Isento (não calcula pedágio)\n- `1` - Motocicletas, motonetas e bicicletas a motor\n- `2` - Automóvel, caminhoneta e furgão (dois eixos simples)\n- `3` - Automóvel, caminhoneta com semirreboque (três eixos simples)\n- `4` - Automóvel, caminhoneta com reboque (quatro eixos simples)\n- `5` - Ônibus (dois eixos duplos)\n- `6` - Ônibus com reboque (três eixos duplos)\n- `7` - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos)\n- `8` - Caminhão, caminhão trator e cavalo mecânico com semirreboque (três eixos duplos)\n- `9` - Caminhão com reboque e cavalo mecânico com semirreboque (quatro eixos duplos)\n- `10` - Caminhão com reboque e cavalo mecânico com semirreboque (cinco eixos duplos)\n- `11` - Caminhão com reboque e cavalo mecânico com semirreboque (seis eixos duplos)\n- `12` - Caminhão com reboque e cavalo mecânico com semirreboque (sete eixos duplos)\n- `13` - Caminhão com reboque e cavalo mecânico com semirreboque (oito eixos duplos)\n- `14` - Caminhão com reboque e cavalo mecânico com semirreboque (nove eixos duplos)\n- `15` - Caminhão com reboque e cavalo mecânico com semirreboque (dez eixos)\n- `16` - Caminhão com reboque e cavalo mecânico com semirreboque (acima de dez eixos)\n"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"Tara"}
+                        required={false}
+                        schemaName={"number"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"number","description":"Peso do veículo vazio, obrigatório somente quando há a emissão de MDF-e"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"Capacidade"}
+                        required={false}
+                        schemaName={"number"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"number","description":"Capacidade em KG. Obrigatório somente para reboque."}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"RNTRC"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"Registro Nacional de Transportadores Rodoviários de Cargas do veículo."}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"OperadoraTagPedagio"}
+                        required={false}
+                        schemaName={"number"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"number","description":"Fornecedor de vale pedágio, obrigatório somente quando a forma de pagamento é diferente de 1 - sem movimentação, 2 - Sem Parar, 3 - ConnectCar, 4 - Veloe"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"NumeroTagPedagio"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"Numero da TAG de operação de vale pedágio, deve ser informado somente quando a tag for nova"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                ProprietarioVeiculo
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              collapsible={false}
+                              name={"Identificador"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Identificador do proprietário do veiculo. Informar somente para utilizar um proprietário do veiculo já previamente cadastrado."}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={true}
+                              className={"schemaItem"}
+                            >
+                              <details
+                                style={{}}
+                                className={"openapi-markdown__details"}
+                              >
+                                <summary
+                                  style={{}}
+                                >
+                                  <span
+                                    className={"openapi-schema__container"}
+                                  >
+                                    <strong
+                                      className={"openapi-schema__property"}
+                                    >
+                                      Dados
+                                    </strong><span
+                                      className={"openapi-schema__name"}
+                                    >
+                                       object
+                                    </span>
+                                  </span>
+                                </summary><div
+                                  style={{"marginLeft":"1rem"}}
+                                >
+                                  <SchemaItem
+                                    collapsible={false}
+                                    name={"Identificador"}
+                                    required={true}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"Identificador do proprietário do veículo. Caso deixe em branco geraremos um GUID único"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"CNPJCPF"}
+                                    required={true}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"CNPJ ou CPF do proprietário, sem pontuação"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"Nome"}
+                                    required={true}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"Nome ou Razão Social do proprietário"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"RNTRC"}
+                                    required={true}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"RNTRC do proprietário"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"IE"}
+                                    required={true}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"Inscrição Estadual do proprietário (obrigatório se juridica)"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"Logradouro"}
+                                    required={true}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"Logradouro do endereço do proprietário"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"Numero"}
+                                    required={true}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"Número do endereço do proprietário"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"UF"}
+                                    required={true}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"UF do estado do proprietário"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"CEP"}
+                                    required={true}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"CEP do endereço do proprietário, sem pontuação"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"IBGE"}
+                                    required={true}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"Código IBGE da cidade do Proprietário"}}
+                                  >
+                                    
+                                  </SchemaItem>
+                                </div>
+                              </details>
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem><SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                Condutores
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 Veiculo_Condutores[]
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                              >
+                                Array [
+                              </div>
+                            </li><SchemaItem
+                              collapsible={false}
+                              name={"Identificador"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Identificador do condutor. Informar somente para utilizar um condutor já previamente cadastrado."}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={true}
+                              className={"schemaItem"}
+                            >
+                              <details
+                                style={{}}
+                                className={"openapi-markdown__details"}
+                              >
+                                <summary
+                                  style={{}}
+                                >
+                                  <span
+                                    className={"openapi-schema__container"}
+                                  >
+                                    <strong
+                                      className={"openapi-schema__property"}
+                                    >
+                                      Dados
+                                    </strong><span
+                                      className={"openapi-schema__name"}
+                                    >
+                                       object
+                                    </span>
+                                  </span>
+                                </summary><div
+                                  style={{"marginLeft":"1rem"}}
+                                >
+                                  <SchemaItem
+                                    collapsible={false}
+                                    name={"Identificador"}
+                                    required={true}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"Identificador do condutor. Caso deixe em branco geraremos um GUID único"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"Nome"}
+                                    required={true}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"Nome do condutor"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"CPF"}
+                                    required={true}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"CPF do condutor, sem pontuação"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"RNTRC"}
+                                    required={true}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"RNTRC do condutor"}}
+                                  >
+                                    
+                                  </SchemaItem>
+                                </div>
+                              </details>
+                            </SchemaItem><li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                              >
+                                ]
+                              </div>
+                            </li>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"Identificador\": \"string\",\n  \"Placa\": \"string\",\n  \"Modelo\": \"string\",\n  \"TipoVeiculo\": 0,\n  \"TipoRodado\": 0,\n  \"TipoCarroceria\": 0,\n  \"Categoria\": 0,\n  \"Tara\": 0,\n  \"Capacidade\": 0,\n  \"RNTRC\": \"string\",\n  \"OperadoraTagPedagio\": 0,\n  \"NumeroTagPedagio\": \"string\",\n  \"ProprietarioVeiculo\": {\n    \"Identificador\": \"string\",\n    \"Dados\": {\n      \"Identificador\": \"string\",\n      \"CNPJCPF\": \"string\",\n      \"Nome\": \"string\",\n      \"RNTRC\": \"string\",\n      \"IE\": \"string\",\n      \"Logradouro\": \"string\",\n      \"Numero\": \"string\",\n      \"UF\": \"string\",\n      \"CEP\": \"string\",\n      \"IBGE\": \"string\"\n    }\n  },\n  \"Condutores\": [\n    {\n      \"Identificador\": \"string\",\n      \"Dados\": {\n        \"Identificador\": \"string\",\n        \"Nome\": \"string\",\n        \"CPF\": \"string\",\n        \"RNTRC\": \"string\"\n      }\n    }\n  ]\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"401"}
+        value={"401"}
+      >
+        <div>
+          
+          
+          Não autorizado. É necessário autenticar para acessar este recurso.
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Não autorizado. É necessário autenticar para acessar este recurso."}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"Não autorizado. É necessário autenticar para acessar este recurso.\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"500"}
+        value={"500"}
+      >
+        <div>
+          
+          
+          Erro interno no servidor. Por favor, tente novamente mais tarde, se o erro persistir, contate o suporte.
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Erro interno no servidor. Por favor, tente novamente mais tarde, se o erro persistir, contate o suporte."}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"Erro interno no servidor. Por favor, tente novamente mais tarde, se o erro persistir, contate o suporte.\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

@@ -1,0 +1,536 @@
+---
+id: edicao-parcial-de-um-prestador-de-servico
+title: "Edição parcial de um prestador de serviço"
+description: "Edição parcial de um prestador de serviço"
+sidebar_label: "Edição parcial de um prestador de serviço"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9WM1u4zYQfhViTi3AdbLb7aG+Jf5JUxSBkE2KAkGQjKWxzK1EaknKm6zhB+hjLPYQoMCeeturXqwYSrbs2Im9QJEcYpEafvw4HM581Aw8pg66V3BClnSsMCftjUhIFJacx8RYctx0ZKeqejBwLaFAizl5sjxyBhpzgi6ohLRXYxXzIJCgNHShQD8BCZY+lMpSAl1vS5Lg/H3GY5zKi4xAAt0VmUkIumPMHBvEE8oRujPw90Ww9FbpFObz6xqNnD82yT1bxEZ70p4fsSgyFaNXRh+8d0ZzXwvVsriC3iACCb2z6LdeNAQJp8cnA/4J/x6t5HeTWkxMaQ1IODM5Ez4rcwrt87OL8x5IuFAFNy+H7KGGtBm9p9iDhMKagqxX5JjHOv7GGiUk5GKrCl4GdNfNRWIEo1lFvvpsleGOKVVf4zIzHdFDx7un7khQLkYWdWxEShYt5caJMhcnl6d9UX3TKjYwbz2wkwUbClOKXjTc4CCFo1wURvsSq4fqS0AOjtoJy1YMe46fqi9GvDOxwmxjAsarHb0TMJhtBTgd7OFrza2wBjHg+C+fYLMSEztBW1uGIp2QperBbMVt4mq336pvbLgb8HKPvb0MW1qf960gfFp2R8ggep7O1jAJB283dvVvolIj2FokKGKVYEI8Q/SY69DYHM8pppEKyWxoye8RiGEYZzrbDuUkOG4SYwiDgCXF7etb8Uq8o1zkZhpM6/VIcfuG31wM+lLc/sSP0emfUojbt/x81u+LHtp0K82IEkzVHju/F9GIkupzyi7fyfXohOn0MTHuGHWMVhm3wuKJHNab4JQidbfH1rGliNQd8xqRprGK1XK3jtJAejfMUVr9w5YbKB0x0FOFVjjDqyPxoUSdGIFivPBUgWlT2MbGBioFZ1JeshihjgOO4zR0Meh3QsAb7fcgFcxehlFfpX+Q3b9q9KuvqfJcG2xbO1DEL8e4Z/jIckztEdWLA87MQtF6GYrRkOvacTMRx/4eVKNhKIRcEDdDei7BKx/UTbSQUDePTtdWI5hz97pSCh2uMNrVp+7N4SH/rPNZIqzqNIG+xEx94owem1y4MibnWKHsLZeeTwA5OYfp1sRKdxhk3XdSW/WK0pnSdLNY/M2bw8ObX9hDcwlvD19vOuGMKzaW3tgA3BHV30ITA9cqCUtetIrRCpavAvkVWi56IZOW1pnOC3vn/+H8nNvYVbXTft4WOQNrjVDak9VGaFPvUGJsR0TGijFOjZXCh9OmzRTrc5ejcsKjTYjruTCCGKUg65Tzyso6xXh+48rCWE8v7dcXW9ZzrmeHz2vfP3J60ujLAm1drol1ebHtqICEnPzEJPVVKua7VLhSdeFgOeBgtnb1moMEHr+4npU2gy5MvC+6BwejzKQdjHPqxCYHvkzxDpy3F6rBwosb15TW08s7Q9tVi/223Yj1toPFd9taVc8rII32bXsu1yYJKnQFMijHtv2E8HvaYCm5WpNNGdQKndZqKVpWuNWCYQXpUb1eNV2piyvd22pRe+/lC/W4rk7LymHeU31Z52BPbS3sWGZu1KwnbEECx0lt87pzyDWxMM7nGE5lc7P/zohdm3l5Tj3d+YMiQ6V5khCUsyaWr2AJBRK66x8SriVMjPNsNZuN0NGlzeZz7v5Qkr2H7tW1hClahSP2ytUMEuX4OVl+THhEaJmK4Ifzptr+KEBuJ9p0or5nX2FWcgsk/EX3G9885tdzCRPChGwgUtv06uleXTBSi7GRBedyMeIojqnwz9perySG6Oii9ytIGDXfQ/LwIQUsfuQvL/ixJmzC+kNIh74ZZKjTMiRTqEH57z9uxGpL
+sidebar_class_name: "patch api-method"
+info_path: docs/ndd-elog-api-docs/projeto-de-integracao-ndd
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Edição parcial de um prestador de serviço"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"patch"}
+  path={"/prestador/{identificador}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Edição parcial de um prestador de serviço
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"identificador","in":"path","required":true,"style":"simple","explode":false,"schema":{"type":"string"},"enumDescriptions":[]}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"Identificador"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"Identificador do proprietário do veículo. Caso deixe em branco geraremos um GUID único"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"CNPJCPF"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"CNPJ ou CPF do proprietário, sem pontuação"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"Nome"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"Nome ou Razão Social do proprietário"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"RNTRC"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"RNTRC do proprietário"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"IE"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"Inscrição Estadual do proprietário"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"Logradouro"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"Logradouro do endereço do proprietário"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"Numero"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"Número do endereço do proprietário"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"UF"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"UF do estado do proprietário"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"CEP"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"CEP do endereço do proprietário, sem pontuação"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"IBGE"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"Código IBGE da cidade do Proprietário"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"FormaRecebimentoFrete"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"Forma de recebimento preferencial do Frete, `1` - Sem movimentação, `2` - TED, `3` - PIX,  `4` - NDD Cargo"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"FormaRecebimentoPedagio"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"Forma de recebimento preferencial do Pedágio, `1` - Sem movimentação, `2` - TAG"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  DadosBancarios
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"ChavePix"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","description":"Chave Pix do beneficiário"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"Agencia"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","description":"Agência do beneficiário. Enviar somente quando a forma de pagamento for Pix por dados bancários ou TED."}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"Conta"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","description":"Conta do beneficiário. Enviar somente quando a forma de pagamento for Pix por dados bancários ou TED."}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"DigVerificador"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","description":"Dígito verificador da conta do beneficiário. Enviar somente quando a forma de pagamento for Pix por dados bancários ou TED."}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"CodigoBanco"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","description":"Código do banco do beneficiário. Enviar somente quando a forma de pagamento for Pix por dados bancários ou TED."}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"CPFCNPJBeneficiario"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","description":"CPF ou CNPJ do beneficiário"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Prestador de serviço atualizado com sucesso
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Prestador de serviço atualizado com sucesso"}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"Prestador de serviço atualizado com sucesso\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"401"}
+        value={"401"}
+      >
+        <div>
+          
+          
+          Não autorizado. É necessário autenticar para acessar este recurso.
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Não autorizado. É necessário autenticar para acessar este recurso."}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"Não autorizado. É necessário autenticar para acessar este recurso.\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"500"}
+        value={"500"}
+      >
+        <div>
+          
+          
+          Erro interno no servidor. Por favor, tente novamente mais tarde, se o erro persistir, contate o suporte.
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Erro interno no servidor. Por favor, tente novamente mais tarde, se o erro persistir, contate o suporte."}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"Erro interno no servidor. Por favor, tente novamente mais tarde, se o erro persistir, contate o suporte.\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      
